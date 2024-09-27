@@ -1,0 +1,181 @@
+/* Barre supérieure */
+.top-bar {
+    background-color: #333; /* Couleur de fond sombre */
+    color: gold; /* Couleur du texte */
+    height: 30px; /* Hauteur de la barre */
+    display: flex; /* Utilisation de Flexbox pour l'alignement */
+    align-items: center; /* Alignement vertical des éléments */
+    justify-content: flex-end; /* Alignement des éléments à droite */
+    padding: 0 15px; /* Espacement horizontal */
+}
+
+.top-bar a {
+    color: gold; /* Couleur des liens */
+    font-size: 15px; /* Taille de la police des liens */
+    text-decoration: none; /* Suppression de la soulignure des liens */
+    line-height: 30px; /* Alignement vertical du texte dans la barre */
+}
+
+/* Barre de navigation */
+
+/* Conteneur et autres éléments */
+.container {
+    max-width: 1000px; /* Largeur maximale du conteneur */
+}
+
+.form-section {
+    border-right: 1px solid #ddd; /* Bordure droite */
+    padding-right: 20px; /* Espacement à droite */
+}
+
+.image-section img {
+    width: 100%; /* Largeur de l'image */
+    max-width: 500px; /* Largeur maximale de l'image */
+    height: 500px; /* Hauteur fixe de l'image */
+    margin-top: 10px; /* Marge en haut */
+    margin-bottom: 20px; /* Marge en bas */
+}
+
+footer {
+    background-color: #333; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding-top: 10px; /* Espace en haut */
+    padding-bottom: 15px; /* Espace en bas */
+    text-align: center; /* Centre le texte horizontalement */
+    margin-top: 5px; /* Marge en haut */
+    margin-bottom: 5px; /* Marge en bas */
+    height: 30px; /* Hauteur totale du footer */
+    font-size: 10px; /* Réduit la taille de la police */
+}
+/* La barre de navigation */
+
+.navbar-brand img {
+    height: 70px; /* Hauteur de l'image */
+    width: auto; /* Maintenir le ratio de l'image */
+}
+
+.navbar-text {
+    font-size: 1.5rem; /* Taille du texte */
+    margin-left: 10px; /* Espacement entre l'image et le texte */
+    font-weight: bold;
+}
+.navbar {
+    display: flex; /* Utilisation de Flexbox pour l'alignement */
+    align-items: center; /* Alignement vertical des éléments */
+    justify-content: space-between; /* Espacement entre les colonnes */
+    background-color: #ffd700; /* Couleur dorée de la barre */
+    padding: 0 15px; /* Espacement horizontal */
+    height: 80px; /* Hauteur de la barre */
+}
+
+.navbar .navbar-brand {
+    margin-right: auto; /* Marge automatique pour pousser l'image à gauche */
+    height: 150px;
+    width: auto;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+
+
+.navbar .nav-link {
+    padding: 10px 15px; /* Espacement autour des liens */
+    color: black; /* Change la couleur du texte en noir */
+}
+/* Section des images du carousel */
+.carousel-inner {
+    text-align: center; /* Centre les images horizontalement */
+}
+
+.carousel-inner img {
+    width: auto; /* Garde le ratio d'aspect */
+    height: 400px; /* Hauteur fixe réduite */
+    object-fit: cover; /* Couvre l'espace sans déformer l'image */
+    margin: 0 auto; /* Centre les images horizontalement */
+}
+
+
+/* Style pour la phrase en jaune doré brillant */
+.highlighted-text {
+    font-size: 1.2rem; /* Taille de la police */
+    color: gold; /* Couleur de texte principale */
+    background: linear-gradient(45deg, gold, orange, red); /* Dégradé de couleurs */
+    -webkit-background-clip: text; /* Clip du fond sur le texte (pour les navigateurs WebKit) */
+    -webkit-text-fill-color: transparent; /* Remplit le texte avec la couleur de fond */
+    text-align: center; /* Centre le texte */
+    font-weight: bold; /* Rend le texte en gras */
+    padding: 20px; /* Espacement autour du texte */
+}
+.form-container {
+    border: 2px solid gold;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+.form-container .book-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.form-container .book-item .book-name {
+    flex: 1;
+}
+.form-container .book-item .book-imagePanier {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+
+
+}
+.btn-custom {
+    margin: 5px;
+}
+.form-groupLogin{
+
+    text-align: left;
+}
+
+.body-listePanier{
+    background-image: url('images/ArrierePlanPanier.jpg'); /* Chemin vers votre image */
+    background-size: cover; /* Couvre tout le body avec l'image */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    height: 100vh; /* S'assure que le fond couvre toute la hauteur de la fenêtre */
+    margin: 0;
+    padding: 0;
+
+}
+.image-sectionn {
+    background-image: url('images/ArrierePlanPanier.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.image-sectionn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.image-sectionn .content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px; /* Limite la largeur pour un meilleur affichage */
+}
+
+
